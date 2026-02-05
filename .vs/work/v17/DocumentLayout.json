@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\VMTarnavskii23\\source\\repos\\work\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAAE9463-E993-4C49-9581-29AC9F1CB416}|work\\work.vcxproj|C:\\Users\\VMTarnavskii23\\source\\repos\\work\\work\\work.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BAAE9463-E993-4C49-9581-29AC9F1CB416}|work\\work.vcxproj|solutionrelative:work\\work.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EE4CE4C9-9F28-4002-92F8-901188EB547C}|Library\\Library.vcxproj|C:\\Users\\VMTarnavskii23\\source\\repos\\work\\Library\\library.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EE4CE4C9-9F28-4002-92F8-901188EB547C}|Library\\Library.vcxproj|solutionrelative:Library\\library.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F730EB5D-1488-431C-A3F2-A0F388D0457B}|work12\\work12.vcxproj|C:\\Users\\VMTarnavskii23\\source\\repos\\work\\work12\\work12.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F730EB5D-1488-431C-A3F2-A0F388D0457B}|work12\\work12.vcxproj|solutionrelative:work12\\work12.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE4CE4C9-9F28-4002-92F8-901188EB547C}|Library\\Library.vcxproj|C:\\Users\\VMTarnavskii23\\source\\repos\\work\\Library\\Library.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EE4CE4C9-9F28-4002-92F8-901188EB547C}|Library\\Library.vcxproj|solutionrelative:Library\\Library.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "work.cpp",
-              "DocumentMoniker": "C:\\Users\\VMTarnavskii23\\source\\repos\\work\\work\\work.cpp",
-              "RelativeDocumentMoniker": "work\\work.cpp",
-              "ToolTip": "C:\\Users\\VMTarnavskii23\\source\\repos\\work\\work\\work.cpp",
-              "RelativeToolTip": "work\\work.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "work12.cpp",
+              "DocumentMoniker": "C:\\Users\\VMTarnavskii23\\source\\repos\\work\\work12\\work12.cpp",
+              "RelativeDocumentMoniker": "work12\\work12.cpp",
+              "ToolTip": "C:\\Users\\VMTarnavskii23\\source\\repos\\work\\work12\\work12.cpp",
+              "RelativeToolTip": "work12\\work12.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-02-05T10:56:00.522Z",
+              "WhenOpened": "2026-02-05T12:04:46.82Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "library.h",
+              "DocumentMoniker": "C:\\Users\\VMTarnavskii23\\source\\repos\\work\\Library\\library.h",
+              "RelativeDocumentMoniker": "Library\\library.h",
+              "ToolTip": "C:\\Users\\VMTarnavskii23\\source\\repos\\work\\Library\\library.h",
+              "RelativeToolTip": "Library\\library.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-05T12:00:59.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Library.cpp",
+              "DocumentMoniker": "C:\\Users\\VMTarnavskii23\\source\\repos\\work\\Library\\Library.cpp",
+              "RelativeDocumentMoniker": "Library\\Library.cpp",
+              "ToolTip": "C:\\Users\\VMTarnavskii23\\source\\repos\\work\\Library\\Library.cpp",
+              "RelativeToolTip": "Library\\Library.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-05T12:00:03.744Z"
             }
           ]
         }
