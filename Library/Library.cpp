@@ -1,7 +1,13 @@
 #include "library.h"
 Book createBook(const string& title, const string& author, int year, double price) {
-Book b;    b.title = title;    b.author = author;    b.year = year;    b.price = price;    return b;
+    Book b;
+    b.title = title;
+    b.author = author;
+    b.year = year;
+    b.price = price;
+    return b;
 }
+
 void printBook(const Book& book) {
     cout << "Zaglavie: " << book.title << endl;
     cout << "Avtor:    " << book.author << endl;
@@ -9,14 +15,16 @@ void printBook(const Book& book) {
     cout << "Cena:     " << book.price << " lv." << endl;
     cout << "--------------------" << endl;
 }
-void printLibrary(const Library& library) {
-    cout << "Biblioteka: " << library.name << endl;
-    cout << "Broi knigi: " << library.count << endl << endl;
 
+void printLibrary(const Library& library) {
+    cout << endl << "Biblioteka: " << library.name << endl;
+    cout << "Broi knigi: " << library.count << endl << endl;
     for (int i = 0; i < library.count; i++) {
         printBook(library.books[i]);
     }
-}double averageBookPrice(const Library& library) {
+}
+
+double averageBookPrice(const Library& library) {
     double sum = 0;
     for (int i = 0; i < library.count; i++) {
         sum = sum + library.books[i].price;
