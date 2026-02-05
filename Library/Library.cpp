@@ -1,51 +1,35 @@
 #include "library.h"
-#include <iostream>
-
-// Turn off precompiled headers requirement just in case
-// (Visual Studio sometimes complains if this isn't the first include)
-
-Book createBook(const std::string& title, const std::string& author, int year, double price) {
-    Book newBook;
-    newBook.title = title;
-    newBook.author = author;
-    newBook.year = year;
-    newBook.price = price;
-    return newBook;
+Book createBook(const string& title, const string& author, int year, double price) {
+Book b;    b.title = title;    b.author = author;    b.year = year;    b.price = price;    return b;
 }
-
 void printBook(const Book& book) {
-    std::cout << "Title:  " << book.title << "\n"
-        << "Author: " << book.author << "\n"
-        << "Year:   " << book.year << "\n"
-        << "Price:  $" << book.price << "\n"
-        << "-------------------------\n";
+    cout << "Zaglavie: " << book.title << endl;
+    cout << "Avtor:    " << book.author << endl;
+    cout << "Godina:   " << book.year << endl;
+    cout << "Cena:     " << book.price << " lv." << endl;
+    cout << "--------------------" << endl;
 }
-
 void printLibrary(const Library& library) {
-    std::cout << "Library: " << library.name << "\n";
-    std::cout << "Total Books: " << library.count << "\n\n";
+    cout << "Biblioteka: " << library.name << endl;
+    cout << "Broi knigi: " << library.count << endl << endl;
 
-    for (int i = 0; i < library.count; ++i) {
+    for (int i = 0; i < library.count; i++) {
         printBook(library.books[i]);
     }
-}
-
-double averageBookPrice(const Library& library) {
-    if (library.count == 0) return 0.0;
-    double sum = 0.0;
-    for (int i = 0; i < library.count; ++i) {
-        sum += library.books[i].price;
+}double averageBookPrice(const Library& library) {
+    double sum = 0;
+    for (int i = 0; i < library.count; i++) {
+        sum = sum + library.books[i].price;
     }
     return sum / library.count;
 }
 
 Book oldestBookInLibrary(const Library& library) {
-    if (library.count == 0) return createBook("N/A", "N/A", 0, 0);
-    int oldestIndex = 0;
-    for (int i = 1; i < library.count; ++i) {
-        if (library.books[i].year < library.books[oldestIndex].year) {
-            oldestIndex = i;
+    Book old = library.books[0];
+    for (int i = 1; i < library.count; i++) {
+        if (library.books[i].year < old.year) {
+            old = library.books[i];
         }
     }
-    return library.books[oldestIndex];
+    return old;
 }

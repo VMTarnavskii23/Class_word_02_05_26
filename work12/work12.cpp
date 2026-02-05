@@ -1,24 +1,25 @@
 #include <iostream>
-#include "library.h" 
-
+#include "library.h"
+using namespace std;
 int main() {
-    Library myLib;
-    myLib.name = "City Library";
-    myLib.count = 3;
-    myLib.books = new Book[3];
+    Library lib;    lib.name = "Gradska Biblioteka";
+    lib.count = 3;
+    lib.books = new Book[3];
 
-    myLib.books[0] = createBook("The Matrix", "Wachowski", 1999, 15.0);
-    myLib.books[1] = createBook("Hamlet", "Shakespeare", 1603, 10.5);
-    myLib.books[2] = createBook("Coding 101", "John Doe", 2023, 50.0);
+    lib.books[0] = createBook("Pod Igoto", "Ivan Vazov", 1894, 25.50);
+    lib.books[1] = createBook("Tutun", "Dimitar Dimov", 1951, 15.00);
+    lib.books[2] = createBook("Bai Ganyo", "Aleko Konstantinov", 1895, 12.99);
 
-    printLibrary(myLib);
+    printLibrary(lib);
+    double avg = averageBookPrice(lib);
+    cout << "Sredna cena na knigite: " << avg << endl;
 
-    std::cout << "Avg Price: " << averageBookPrice(myLib) << "\n";
+    Book oldest = oldestBookInLibrary(lib);
+    cout << "Nai-starata kniga e: " << oldest.title << endl;
 
-    Book old = oldestBookInLibrary(myLib);
-    std::cout << "Oldest: " << old.title << "\n";
+    delete[] lib.books;
 
-    delete[] myLib.books;
-    std::cin.get(); // Keep window open
-    return 0;
+    int wait;
+    cin >> wait;
+    
 }
